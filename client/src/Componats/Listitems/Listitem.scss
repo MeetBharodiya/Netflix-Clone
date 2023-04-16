@@ -1,0 +1,94 @@
+.listItem {
+        width: 250px;
+        height: 150px;
+        background-color: var(--main-color);
+        margin-right: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        color: white;
+        border-radius: 10px;
+        
+      
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        // img:not(:hover) {
+        //   filter: blur(3px);
+        //   -webkit-transition: 400ms ease 100ms;
+        //   -moz-transition: 400ms ease 100ms;
+        //   transition: 400ms ease 100ms;
+        // }
+      
+        video {
+          width: 100%;
+          height: 140px;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      
+        &:hover {
+          width: 325px;
+          height: 300px;
+          position: absolute;
+          top: -75px;
+          -webkit-box-shadow: 2px 2px 19px 3px rgba(255,247,255,0.15); 
+          box-shadow: 2px 2px 19px 3px rgba(255,247,255,0.15);
+          border-radius: 12px;
+          // transition: all .9s ease-in-out;
+          transition: width 1s, height 1s;
+        //   transition: transfrom 2s;
+      
+          img {
+            height: 140px;
+          }
+      
+          .itemInfo {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+      
+            .icons {
+              display: flex;
+              margin-bottom: 10px;
+      
+              .icon {
+                border: 2px solid white;
+                padding: 5px;
+                border-radius: 50%;
+                margin-right: 10px;
+                font-size: 16px;
+              }
+            }
+            .itemInfoTop {
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+              font-size: 14px;
+              font-weight: 600;
+              color: gray;
+      
+              .limit {
+                border: 1px solid gray;
+                padding: 1px 3px;
+                margin: 0 10px;
+              }
+            }
+      
+            .desc {
+              font-size: 13px;
+              margin-bottom: 10px;
+            }
+      
+            .genre {
+              font-size: 14px;
+              color: lightgray;
+            }
+          }
+        }
+       
+      }
